@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Spartan", sans-serif; */
+}
+
+:root {
+  --Very_Dark_Magenta: hsl(300, 43%, 22%);
+  --Soft_Pink: hsl(333, 80%, 67%);
+  
+  --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+  --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  background-color: var(--White);
+}
+
+section {
+  background: url("./images/bg-pattern-top-desktop.svg") no-repeat,
+    url("./images/bg-pattern-bottom-desktop.svg") no-repeat right bottom;
+  background-color: var(--White);
+  padding: 132px 160px;
+}
+
+.topSec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 440px;
+}
+
+.left .desc {
+  line-height: 24px;
+  color: var(--Dark_Grayish_Magenta);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px 0 20px 0;
+  line-height: 25px;
+
+  font-weight: 500;
+}
+
+.botSec {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+#title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--Very_Dark_Magenta);
+  padding-right: 15px;
+  line-height: 50px;
+}
+
+.nameSec {
+  display: flex;
+  align-items: center;
+}
+
+.rateSec {
+  box-sizing: border-box;
+  background-color: var(--Light_Grayish_Magenta);
+  display: flex;
+  padding: 18px 30px;
+  margin: 15px 0;
+  border-radius: 8px;
+  align-items: center;
+  width: 445px;
+}
+
+/* .rate-1 {
+  margin-top: 26px;
+} */
+
+.rate-3 {
+  margin-top: 16px;
+}
+
+.rateSec p {
+  color: var(--Very_Dark_Magenta);
+  /* color: red; */
+  padding: 0 30px;
+  font-size: 14px;
+  /* font-style; */
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+}
+
+.rate-2 {
+  margin-left: 48px;
+}
+
+.rate-3 {
+  margin-left: 96px;
+}
+
+.review {
+  height: 150px;
+  width: 350px;
+  border-radius: 8px;
+  margin: 0 15px;
+  padding: 40px 32px;
+  background-color: var(--Very_Dark_Magenta);
+}
+.review:first-child {
+  margin-left: 0%;
+}
+
+.review:nth-child(3) {
+  margin-right: 0;
+}
+.review img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.info {
+  padding: 0 20px;
+  line-height: 19px;
+}
+
+.info .name {
+  color: var(--Light_Grayish_Magenta);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.info .verified {
+  color: var(--Soft_Pink);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.reviewText {
+  padding: 23px 10px 23px 0;
+  line-height: 22px;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--White);
+}
+
+.user-2 {
+  margin-top: 15px;
+}
+
+.user-3 {
+  margin-top: 30px;
+}
+
+@media (max-width: 1250px) {
+  section {
+    padding: 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  section {
+    padding: 60px;
+  }
+  .review {
+    height: 160px;
+  }
+}
+
+@media (max-width: 960px) {
+  section {
+    padding: 40px;
+  }
+  .review {
+    height: 185px;
+  }
+}
+
+@media (max-width: 855px) {
+  section {
+    padding: 30px;
+  }
+
+  #title {
+    font-size: 40px;
+  }
+
+  .left .desc {
+    padding-bottom: 0px;
+  }
+  .rateSec {
+    padding: 18px 5px;
+    width: 320px;
+  }
+  .rateSec p {
+    padding: 0 5px 0 10px;
+  }
+  .info {
+    padding: 0 10px;
+    line-height: 19px;
+  }
+
+  .reviewText {
+    padding: 16px 0;
+    font-size: 13px;
+  }
+  .info .verified {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 720px) {
+  .botSec {
+    margin-top: 30px;
+  }
+  .review {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 690px) {
+  section {
+    width: 70vw;
+    margin: 50px auto;
+  }
+
+  #title,
+  .desc {
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .desc {
+    margin-bottom: 40px;
+  }
+
+  .topSec,
+  .botSec,
+  .rateSec {
+    display: block;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .rateSec {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    padding: 13px 0;
+  }
+
+  .rateSec p {
+    padding: 0;
+  }
+
+  .star {
+    padding-bottom: 10px;
+  }
+
+  .review {
+    box-sizing: border-box;
+    width: 100%;
+    height: min-content;
+    margin: 15px;
+    margin-left: 0;
+    padding: 30px;
+    font-size: 15px;
+  }
+
+  .info {
+    padding: 0 20px;
+    line-height: 19px;
+  }
+
+  .info .verified,
+  .reviewText {
+    font-size: 12px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
